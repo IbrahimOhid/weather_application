@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Application</title>
+    <!--bootstrap css cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--css link-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!--form section start here-->
+    <div class="container">
+        <div class="text-center py-5">
+            <h1 class="text-info text-decoration-underline">Weather Application</h1>
+        </div>
+        <div class="pt-2" id="msg"></div>
+        <div class="row">
+            <div class="col-md-6 pt-3">
+                <form class="rounded-5 py-5 text-white">
+                    <div class="p-2 px-5">
+                        <div>
+                            <label for="" class="mb-2 fw-bold">Country Name</label>
+                            <input class="form-control" id="countyInput" placeholder="Enter country name">
+                            <small>try your country’s first two letters (Ex: BD)</small>
+                        </div>
+                        <div>
+                            <label for="" class="mt-2 mb-2 fw-bold">City Name</label>
+                            <input class="form-control mb-3" id="cityInput" placeholder="Enter city name">
+                        </div>
+                        <div class="text-center">
+                            <input class="py-2 px-5 rounded-3 fw-bold submit" type="submit" value="Search">
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-6">
+                <!-- Weather -->
+                <div class="pt-3">
+                    <div class="bg-light rounded-5 py-5">
+                        <div class="d-flex flex-row justify-content-center align-items-center py-4" >
+                            <div class="p-0">
+                                <h2><span id="w-temp">32</span>&deg;</h2>
+                            </div>
+                            <div class="cloud p-3">
+                                <img src="./img/cloudy.png" id="w-img" class="img-fluid">
+                            </div>
+                            <div class="p-3">
+                                <h5 id="w-name">Dhaka</h5>
+                                <h3><span id="w-desc">Cloudy</span></h3>
+                            </div>
+                        </div>
+                        <div class="weather__status d-flex flex-row justify-content-center align-items-center mt-3">
+                            <div class="p-4 d-flex justify-content-center align-items-center">
+                                <img src="https://svgshare.com/i/17h8.svg">
+                                <span id="w-humidity">43</span> %
+                            </div>
+                            <div class="p-4 d-flex justify-content-center align-items-center">
+                                <img src="https://svgshare.com/i/17fv.svg">
+                                <span id="w-pressure">0.53 </span>hPa
+                            </div>
+                            <div class="p-4 d-flex justify-content-center align-items-center">
+                                <img src="https://svgshare.com/i/17gr.svg">
+                                <span id="w-wind">13</span> km/h
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--form section end here-->
+    <!--bootstrap js cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- js link-->
+    <script src="./script.js"></script>
+</body>
+
+</html>

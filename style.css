@@ -1,0 +1,72 @@
+body{
+	background-color: #181e2d;
+}
+form{
+    background-color: #00d2d3;
+}
+form .submit{
+    background-color: #FC427B;
+    border: none;
+    color: #fff;
+
+}
+form .submit:hover{
+    background-color: #ee5253;
+    border: none;
+    color: #fff;
+
+}
+  .weather__card h3 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: .8;
+    color:#3C4048;
+  }
+  .weather__card h5 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: .1;
+    color:#4e4040;
+  }
+  .weather__card .weather__description {
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 5px 13px;
+    border:0;
+    outline: none;
+    color:#7F8487;
+    font-size: .956rem;
+    font-weight: 400;
+  }
+  /*--------------------------------------------------------------
+  # Weather Status
+  --------------------------------------------------------------*/
+  .weather__status img {
+    height: 25px;
+    width: 22px;
+    vertical-align:middle;
+  }
+  .weather__status span {
+    font-weight: 500;
+    color: #3C4048;
+    font-size: .9rem;
+    padding-left: .5rem;
+  }
+  .cloud img{
+    width: 50px;
+    height: 50px;
+  }
+  /*--------------------------------------------------------------
+  # Weather Forecast
+  --------------------------------------------------------------*/
+  .weather__forecast img {
+    height: 25px;
+    width: 28px;
+    vertical-align:middle;
+  }
+  .weather__forecast span {
+    font-weight: 500;
+    color: #3C4048;
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
